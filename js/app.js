@@ -1,7 +1,7 @@
 let iconos = []
 let selecciones = []
 
-generarJuego()
+generarJuego();
 
 function generarJuego() {
     cargarInfo()
@@ -13,7 +13,7 @@ function generarJuego() {
         <div class="area-tarjeta" onclick="seleccionarTarjeta(${i})">
             <div class="tarjeta" id="tarjeta${i}">
                 <div class="cara trasera" id="trasera${i}">
-                    ${iconos[0]}
+                    <img src="${iconos[0]}" class="img"/>
                 </div>
                 <div class="cara superior">
                     <i class="far fa-question-circle"></i>
@@ -26,19 +26,19 @@ function generarJuego() {
         }
     }
     tarjetas.sort(() => Math.random() - 0.5)
-    tablero.innerHTML = tarjetas.join(" ")
+    tablero.innerHTML = tarjetas.join(" ");    
 }
 
 function cargarInfo() {
     iconos = [
-        'A',
-        'B',
-        'C',
-        'D',
-        'E',
-        'F',
-        'G',
-        'H',
+        '../img/one.jpeg',
+        '../img/two.jpg',
+        '../img/three.jpg',
+        '../img/four.jpg',
+        '../img/five.jpg',
+        '../img/six.jpg',
+        '../img/seven.jpg',
+        '../img/eight.jpg',        
         'I',
         'J',
         'K',

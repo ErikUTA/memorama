@@ -86,3 +86,10 @@ div {
         transform: rotateY(0deg);
     }
 }
+
+.img {
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 80%;
+}
